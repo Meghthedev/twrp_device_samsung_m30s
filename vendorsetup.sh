@@ -4,7 +4,10 @@
 #
 # SPDX-License-Identifier: Apache-2.0
 #
+TWRP_DEVICE="m30s"
 
-add_lunch_combo omni_m30s-user
-add_lunch_combo omni_m30s-userdebug
-add_lunch_combo omni_m30s-eng
+# Common
+export ALLOW_MISSING_DEPENDENCIES=true
+export LC_ALL="C"
+
+export LZMA_RAMDISK_TARGETS="recovery"
