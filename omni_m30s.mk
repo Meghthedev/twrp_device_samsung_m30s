@@ -4,12 +4,8 @@
 #
 # SPDX-License-Identifier: Apache-2.0
 #
-
-$(call inherit-product, build/target/product/embedded.mk)
-
-# Inherit some common Omni stuff.
-$(call inherit-product, vendor/omni/config/common.mk)
-$(call inherit-product, vendor/omni/config/gsm.mk)
+# Inherit from the common Open Source product configuration
+$(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := m30s
